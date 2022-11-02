@@ -31,6 +31,37 @@
 //   balance: 1000
 // });
 
+// // round-3 solution
+
+// class Atm {
+//   constructor({ pin, balance }) {
+//     (this.pin = pin), (this.balance = balance);
+//   }
+
+//   CheckBalance(pin) {
+//     if (this.pin != pin) {
+//       console.log("Incorrcet Pin");
+//     } else {
+//       console.log(`Your balance is ${this.balance}`);
+//     }
+//   }
+//   WidthdrawCash(pin, withdrawAmount) {
+//     if (pin != this.pin) {
+//       console.log("Incorrect Pin");
+//     } else if (this.balance < withdrawAmount) {
+//       console.log("Insufficient Balance !");
+//     } else {
+//       console.log(`pls collect your cash ${withdrawAmount}`);
+//       this.balance -= withdrawAmount;
+//       console.log(`Your balance is ${this.balance}`);
+//     }
+//   }
+// }
+// let user1 = new Atm({pin: 123, balance: 1000});
+
+// user1.CheckBalance(123);
+// // for round-4 you just have to use setTimeOut function everything is same
+
 // checkBalance();
 
 // let storeObject = {
@@ -56,19 +87,6 @@
 // let user1 = userGenartor("123", "1000");
 // let user2 = userGenartor("")
 
-// class Atm {
-//   constructor({ pin, balance }) {
-//     (this.pin = pin), (this.balance = balance);
-//   }
-
-//   CheckBalance() {
-//     console.log("the balance is ", this.balance);
-//   }
-//   WidthdrawCash() {
-//     console.log("widhtraw cash run");
-//   }
-
-// }
 // let user1 = new Atm({ pin: "123", balance: "2000" });
 // // console.log(user1.balance);
 // user1.CheckBalance();
@@ -96,3 +114,14 @@
 
 // 1, 2, ,3, 4
 // 1, 10, 11, 100
+// i hope there is nothi
+// longest common substring
+
+var k = 0;
+let j = setInterval(() => {
+  k += 1;
+  console.log(k);
+  if (k == 10) {
+    clearInterval();
+  }
+}, 1000);
